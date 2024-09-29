@@ -8,15 +8,25 @@ Q2:
 
 
 judgeSame(a: number[], b: number[], v: number): boolean {
+
    let bSet = new Set(b);
+   
    for (let index = 0; index < a.length; index++) {
+   
      let value = v - a[index];
+     
      if (bSet.has(value)) {
+     
        return true;
+       
      }
+     
    }
+   
    return false;
+   
  }
+ 
 
 Q3:
 
